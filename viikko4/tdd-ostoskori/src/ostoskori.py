@@ -38,7 +38,7 @@ class Ostoskori:
     def ostokset(self):
         kori_lista = []
         for tuote in self.kori.keys():
-            kori_lista.append((tuote.nimi(), tuote.hinta()))
+            kori_lista.append((tuote.nimi(), self.kori.get(tuote)))
         return kori_lista
         # palauttaa listan jossa on korissa olevat ostos-oliot
         # kukin ostos-olio siis kertoo mistä tuotteesta on kyse JA kuinka monta kappaletta kyseistä tuotetta korissa on
