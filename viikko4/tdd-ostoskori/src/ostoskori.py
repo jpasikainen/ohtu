@@ -29,7 +29,9 @@ class Ostoskori:
 
     def poista_tuote(self, poistettava: Tuote):
         # poistaa tuotteen
-        pass
+        self.kori[poistettava] = self.kori.get(poistettava, 0) - 1
+        if self.kori[poistettava] == 0:
+            self.kori.pop(poistettava)
 
     def tyhjenna(self):
         pass
