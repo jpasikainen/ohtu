@@ -19,7 +19,7 @@ class Ostoskori:
     def hinta(self):
         summa = 0
         for tuote in self.kori.keys():
-            summa += self.kori.get(tuote.hinta, 0)
+            summa += tuote.hinta()
         return summa
         # kertoo korissa olevien ostosten yhteenlasketun hinnan
 
