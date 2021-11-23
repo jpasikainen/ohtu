@@ -25,7 +25,7 @@ class Ostoskori:
 
     def lisaa_tuote(self, lisattava: Tuote):
         # lisää tuotteen
-        pass
+        self.kori[lisattava] = self.kori.get(lisattava, 0) + 1
 
     def poista_tuote(self, poistettava: Tuote):
         # poistaa tuotteen
