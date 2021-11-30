@@ -22,9 +22,8 @@ class Nollaus:
         self.sovelluslogiikka.nollaa()
 
 class Kumoa:
-    def __init__(self, sovelluslogiikka, syote):
+    def __init__(self, sovelluslogiikka):
         self.sovelluslogiikka = sovelluslogiikka
-        self.syote = syote
 
     def suorita(self):
-        pass
+        self.sovelluslogiikka.kumoa()
